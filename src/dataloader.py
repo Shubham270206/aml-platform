@@ -40,7 +40,7 @@ def load_paysim(filepath: str) -> pd.DataFrame:
         fraud_in_type = df[df["type"] == tx_type]["isFraud"].sum()
         print(f"       {tx_type:<12} {count:>8,} txns  |  {fraud_in_type:>5,} fraud")
 
-    return df
+    return dfgit 
 
 
 if __name__ == "__main__":
